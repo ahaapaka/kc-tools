@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "kc-tools"
+version = "0.1.0"
+description = ""
+authors = ["Antti Haapakangas <ahaapaka@gmail.com>"]
+readme = "README.md"
+packages = [{include = "kc_tools", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+selenium = "^4.27.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+open_website_and_login = "kc_tools.open_website_and_login:run"
